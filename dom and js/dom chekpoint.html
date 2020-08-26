@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="./dom checkpoint.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Shopping cart</title>
+  </head>
+  <body>
+    <header>
+      <!--Title-->
+      <h1 id="title">Shopping Cart</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main class="products">
+      <!--Product 1-->
+      <section class="item1">
+        <div class="buttons">
+          <p class="delete-button">
+            Delete
+            <i class="fas fa-trash-alt"></i>
+          </p>
+          <br />
+          <p class="like-button">
+            Favorite
+            <i class="far fa-heart"></i>
+          </p>
+        </div>
+        <img src="./resources/image shoes.jpg" alt="shoes" />
+        <div class="Sneakers">
+          <br />
+          <h3>Lace-Up Sneakers</h3>
+          <br />
+          <p>Blue</p>
+        </div>
+        <div class="quantity">
+
+            <h2 class="text">Quantity</h2>
+            <br>
+            <div>
+            <button class="plus-btn" type="button" name="button">
+              <i class="fas fa-plus"></i>
+            </button>
+            <input class="quantité" type="text" name="name" value="1" />
+            <button class="minus-btn" type="button" name="button">
+              <i class="fas fa-minus"></i>
+            </button>
+          </div>
+          </div>
+        </div>
+        <br />
+        <div class="allprice">
+          <h2 class="price">
+            Price
+            <br />
+            <p style="color: khaki;"><span class="prix">230</span>$</p>
+          </h2>
+        </div>
+      </section>
+      <!--Product 2-->
+      <section class="item2">
+        <div class="buttons">
+          <p class="delete-button">
+            Delete
+            <i class="fas fa-trash-alt"></i>
+          </p>
+          <br />
+          <p class="like-button">
+            Favorite
+            <i class="far fa-heart"></i>
+          </p>
+        </div>
+        <img src="../dom and js/resources/Pull.jpg" alt="pull" width="200" />
+        <div class="pullover">
+          <br />
+          <h3>Pullover Drawstrings Hoodies</h3>
+          <br />
+          <p>Gray</p>
+        </div>
+        <div class="quantity">
+          <h2 class="text2">Quantity</h2>
+          <br>
+          <div>
+          <button class="plus-btn" type="button" name="button">
+            <i class="fas fa-plus"></i>
+          </button>
+          <input class="quantité" type="text" name="name" value="1"/>
+          <button class="minus-btn" type="button" name="button">
+            <i class="fas fa-minus"></i>
+          </button>
+        </div>
+        </div>
+        <br />
+        <div class="allprice">
+          <h2 class="price">
+            Price
+            <br />
+            <p style="color: khaki;"><span class="prix">25</span>$</p>
+          </h2>
+        </div>
+      </section>
+      <div>
+       <p class="total"> Total:<span id="prix-total">0</span>$</p>
+      </div>
+      <h2 class="thankyou">Thank you for buying...</h2>
+    </main>
+    <footer></footer>
+    <script src="dom checkpoint.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
